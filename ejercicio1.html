@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    Crear un documento html con 3 cuadrados que, 
+    al ser clickeados, cambien el color de fondo del documento. Cada cuadrado debera tener un color distinto.
+  
+ </head>
+<body>
+    <div class="contenedor">
+     <h3> Primer color </h3>
+     <div class="cuadrado rojo" onclick="cambiarFondo('red')"></div>
+
+     <h3> Segundo color </h3>
+     <div class="cuadrado verde" onclick="cambiarFondo('green')"></div>
+
+     <h3> Tercer color </h3>
+     <div class="cuadrado azul" onclick="cambiarFondo('blue')"></div>    
+
+    </div>
+
+    <style>
+     .contenedor{
+     display: flex;
+     }
+ 
+     .cuadrado {
+     height: 100px;
+     width: 100px;
+     }
+
+     .rojo {
+     background-color: red;
+     }
+
+     .verde {
+     background-color: green;
+     }
+
+     .azul {
+     background-color: blue;
+     }
+        
+    </style>
+
+
+ <script>
+    
+   function cambiarfondo(color) {
+    document.querySelector('body').style.background = color;
+   }
+
+
+ </script>
+
+</body>
+</html>
